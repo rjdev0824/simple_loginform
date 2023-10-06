@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="login-form">
+        <!-- Login-Form -->
+        <div class="form-content active-tab" id="signin">
+            <div class="logo">
+                <h1 class="sub-title">Student Information System</h1>
+            </div>
+            <form action="">
+                <h3>Login-Form</h3>
+                <input type="email" name="email" placeholder="">
+                <label for="email" id="email">Email</label><br><br>
+                <input type="password" name="password" placeholder="">
+                <label for="password" id="password">Password</label><br><br>
+                <input type="submit" value="Login" id="submit">
+            </form>
+            <footer>
+                <p>Don't have an account? <span class="tab-links active-link" onclick="opentab('signup')">Register</span></p>
+            </footer>
+        </div>
+        <!-- Registration-Form -->
+        <div class="form-content" id="signup">
+            <div class="logo">
+                <h1 class="sub-title">Student Information System</h1>
+            </div>
+            <form action="">
+                <h3>Registration-Form</h3>
+                <input type="text" name="fname" placeholder="">
+                <label for="fname" id="fname">Firstname</label><br><br>
+                <input type="text" name="lname" placeholder="">
+                <label for="lname" id="lname">Lastname</label><br><br>
+                <input type="email" name="email" placeholder="">
+                <label for="email" id="email">Email</label><br><br>
+                <input type="password" name="password" placeholder="">
+                <label for="password" id="password">Password</label><br><br>
+                <input type="password" name="confirm_password" placeholder="">
+                <label for="confirm_password" id="confirm_password">Confrim Password</label><br><br>
+                <input type="submit" value="Register" id="submit">
+            </form>
+            <footer>
+                <p>Already have an account? <span class="tab-links" onclick="opentab('signin')">Login</span></p>
+            </footer>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
